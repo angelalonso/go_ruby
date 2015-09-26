@@ -40,7 +40,7 @@ class Gui
           target.update_pos(-1,'x')
         when KEY_RIGHT
           target.update_pos(1,'x')
-        when KEY_BACKSPACE
+        when ' '
           @gameboard.newstone(target.x,target.y,play.currentplayer)
           play.next
         end
